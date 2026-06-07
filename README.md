@@ -1,7 +1,25 @@
-# Ctor
+# Ctor - Deprecated
 
 [![Downloads](https://img.shields.io/packagist/dt/tomasvotruba/ctor.svg?style=flat-square)](https://packagist.org/packages/tomasvotruba/ctor/stats)
-[![Code Analysis](https://img.shields.io/github/actions/workflow/status/TomasVotruba/ctor/code_analysis.yaml?branch=main&style=flat-square&label=code%20analysis)](https://github.com/TomasVotruba/ctor/actions/workflows/code_analysis.yaml)
+
+**⚠️ This package is deprecated.** The rule has been merged into [symplify/phpstan-rules](https://github.com/symplify/phpstan-rules), use it instead:
+
+```bash
+composer require symplify/phpstan-rules --dev
+```
+
+Then enable the rule in your `phpstan.neon`:
+
+```yaml
+parameters:
+    ctor: true
+```
+
+<br>
+
+---
+
+<br>
 
 If you can use constructor instead of setters, use it. These PHPStan rules will help you to find such cases.
 
